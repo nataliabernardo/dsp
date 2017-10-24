@@ -11,11 +11,11 @@ import thinkplot
 
 resp = nsfg.ReadFemResp()
 
-###### **Use the NSFG respondent variable NUMKDHH to construct the actual distribution for the number of children under 18 in the household.**
+#### **Use the NSFG respondent variable NUMKDHH to construct the actual distribution for the number of children under 18 in the household.**
 
 pmf = thinkstats2.Pmf(resp.numkdhh, label='numkdhh')
 
-###### **Now compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.**
+#### **Now compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household.**
 
 def BiasPmf(pmf, label):
     new_pmf = pmf.Copy(label=label)
@@ -26,7 +26,7 @@ def BiasPmf(pmf, label):
     new_pmf.Normalize()
     return new_pmf
 
-###### **Plot the actual and biased distributions, and compute their means.**
+#### **Plot the actual and biased distributions, and compute their means.**
 
 thinkplot.Pmf(pmf)
 thinkplot.Config(xlabel='Number of children', ylabel='PMF')
