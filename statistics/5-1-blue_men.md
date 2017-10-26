@@ -4,14 +4,14 @@ from __future__ import print_function, division
 
 import scipy.stats
 
-######normal distribution
+#### normal distribution
 mu = 178
 sigma = 7.7
 dist = scipy.stats.norm(loc=mu, scale=sigma)
 type(dist)
 
 
-######cumulative distributions for the low and high edges of the range.
+#### cumulative distributions for the low and high edges of the range.
 
 low = dist.cdf(177.8)    # 5'10"
 high = dist.cdf(185.4)   # 6'1"
