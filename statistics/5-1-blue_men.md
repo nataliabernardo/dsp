@@ -14,6 +14,7 @@ type(dist)
 #### cumulative distributions for the low and high edges of the range.
 
 low = dist.cdf(177.8)    # 5'10"
+
 high = dist.cdf(185.4)   # 6'1"
 
 range_blueman = high-low
