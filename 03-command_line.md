@@ -45,7 +45,15 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Command | Description
+> > ------- | ----------
+> > ls | list directory contents
+> > ls -a | list directory contents, including hidden files
+> > ls -l | list detailed directory contents
+> > ls -lh | list detailed directory contents, where sizes are in human readable format
+> > ls -lah | list detailed directory contents, including hidden files, where sizes are in human readable format
+> > ls -t | List files sorted by date and time
+> > ls -Glp | List files in long format and directories as /
 
 ---
 
