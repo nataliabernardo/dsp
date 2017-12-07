@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I prefered to use nano, because its commands are more similar to the ones I'm used to.
 
 --
 
