@@ -61,7 +61,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > `ls -la` `ls -p` `ls -x` `ls -r` `ls -a`
 
 ---
 
@@ -69,7 +69,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs is a command used to build and execute commands from standard input. It converts input from standard input into arguments to a command. The most common usage of xargs is to use it with the find command. This uses find to search for files or directories and then uses xargs to operate on the results. Typical examples of this are removing files, changing the ownership of files or moving files.
 
  
 
