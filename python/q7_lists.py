@@ -7,7 +7,6 @@ def match_ends(words):
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
     of the string are the same.
-
     >>> match_ends(['aba', 'xyz', 'aa', 'x', 'bbb'])
     3
     >>> match_ends(['', 'x', 'xy', 'xyx', 'xx'])
@@ -15,7 +14,13 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    count = 0
+
+    for word in words:
+        if len(word) > 1 and word[0] == word[-1]:
+            count += 1
+
+    return count
 
 
 def front_x(words):
@@ -32,7 +37,17 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    
+    l1 = []
+    l2 = []
+    
+    for i in words:
+        if i[0] == "x":
+            l1.append(i)
+        else:
+            l2.append(i)
+            
+    return l1 + sorted(l2)
 
 
 def sort_last(tuples):
@@ -68,7 +83,13 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    l = []
+    for i in nums:
+        if len(l) == 0 or i != l[-1]:
+            l.append(i)
+        else:
+            continue
+    return l
 
 
 def linear_merge(list1, list2):
@@ -85,4 +106,4 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    return sorted(list1 + list2)
