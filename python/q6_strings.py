@@ -8,7 +8,6 @@ def donuts(count):
     form 'Number of donuts: <count>', where <count> is the number
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
-
     >>> donuts(4)
     'Number of donuts: 4'
     >>> donuts(9)
@@ -18,8 +17,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count > 9:
+        return print ('many')
+    else:
+        return print ('Number of donuts:', count)
     raise NotImplementedError
-
 
 def both_ends(s):
     """
@@ -37,6 +39,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s) < 2:
+        return ""
+    else:
+        return print (s[:2] + s[-2:])
     raise NotImplementedError
 
 
@@ -56,7 +62,11 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first = s[0]
+    s = s.replace(first, '*')
+    s = first + s[1:]
+
+    return s
 
 
 def mix_up(a, b):
